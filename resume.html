@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>R Arjun - My Web Resume</title>
   <style>
-    /* Internal CSS */
+      /* Internal CSS */
+      /* Responsive layout */
+      @media only screen and (max-width: 600px) {
+        .profile-content {
+          flex-direction: column; /* Change flex direction to column for smaller screens */
+        }
+    
+        .profile-image,
+        .profile-bio {
+          width: 100%; /* Make profile image and bio take full width on smaller screens */
+          padding: 10px; /* Reduce padding for smaller screens */
+        }
+    
+        .card {
+          margin-left: 10px; /* Adjust margin for smaller screens */
+          margin-right: 10px; /* Adjust margin for smaller screens */
+        }
+      }
+    
     body {
       font-family: Arial, sans-serif;
       box-sizing: border-box;
@@ -118,7 +136,6 @@
     .social-icons-nav a:hover img {
       transform: scale(1.1);
     }
-    
 
     .card {
       background-color: #f9f9f9;
@@ -291,7 +308,7 @@
 
 <header>
   <div class="profile-image">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczPay7AVjpXr_PwgfJueFn6Yfl5lNCA5au_fukLszIfBlbnrBOzbP0nI6k3I5pd6kJ-LIeWUh0mr4TGznz9B4cxa_DgINhB_AdQSdSs-7os_BzbKuvaGticQadQ5nTDgTqxnuykklUg3A-oBvIi1jPOg5w=w1746-h380-s-no-gm?authuser=0" alt="Profile Picture" height="150px" width="auto">
+    <img src="https://arjun33388.github.io/My-Resume/Portfolio-header.png" alt="Profile Picture" height="150px" width="auto">
   </div>
 </header>
 
@@ -299,11 +316,12 @@
   <a href="https://docs.google.com/document/d/1PGrarDAOxFXg2s3mGsoc6GtImZn7pUEhAcONOgWRhDA/edit?usp=sharing"><img src="https://resumeworded.com/assets/images/resume-guides/digital-transformation-leader.png" height="90px" width="auto"></a>
   <a onclick="scrollToSection('profile')">Profile</a>
   <a onclick="scrollToSection('education')">Education</a>
-  <a onclick="scrollToSection('achievements')">Achievements & Involvements</a>
-  <a onclick="scrollToSection('certifications')">Workshops & Certifications</a>
+  <a onclick="scrollToSection('interests')">Experience</a>
+  <a onclick="scrollToSection('projects')">Projects</a>
+  <a onclick="scrollToSection('certifications')">Certifications</a>
   <a onclick="scrollToSection('skills')">Key Skills</a>
   <a onclick="scrollToSection('technical-skills')">Technical Skills</a>
-  <a onclick="scrollToSection('interests')">Interests</a>
+  <a onclick="scrollToSection('achievements')">Volunteering</a>
   <a onclick="scrollToSection('more')">For More Information</a>
   <div class="social-icons-nav">
     <a href="https://www.linkedin.com/in/-arjun--r/"><img src="https://arjun33388.github.io/My-Resume/linkedin-logo-png-1837.png" alt="LinkedIn"></a>
@@ -322,33 +340,57 @@
       </div>
       <div class="profile-bio">
         <u><h2>About me</h2></u>
-        <p>I'm proficient in English communication and soft skills, with demonstrated leadership and management abilities, coupled with strong problem-solving capabilities. Skilled in programming languages including C, C++, and Java, as well as web development using HTML, CSS and JavaScript, complemented by strategic planning expertise.</p>
+        <p>Passionate and driven computer science student with a keen eye for problem-solving and a demonstrated ability to deliver tangible outcomes. I excel in environments that foster collaboration and innovation. Committed to leveraging my skills and enthusiasm to drive meaningful contributions to the world.<li> | <u>Technology enthusiast</u> | </li></p>
       </div>
     </div>
   </div>
 </div>
-
 
 <div id="education" class="container">
   <!-- Education -->
   <div class="card">
     <div class="card-content">
       <h2>Education</h2>
+      <p><li><u>Loyola Academy, Secunderabad</u> -- Bachelor's Degree</li><br>August 2022 - Ongoing<br>Currently pursuing a Bachelor of Science specializing in Computer Science and Engineering.<div class="content">Academic Achievement: 9.66 CGPA (Till Date)<br><li>Activities:</li>Website Head of the Student Council - 2024 - 2025<br>Documentation Head of MAGIC Youth Core Committee - 2023 - 2024</div></p>
       <p><li><u>Trividyaa Junior College, Suchitra</u> -- Pre-University</li><br>June 2020 - May 2022<br>Completed my Pre-University education majoring in Maths, Physics, and Chemistry.<br><div class="content">Academic Achievement: 95.2% (TSBIE)</div></p>
-      <p><li><u>Loyola Academy, Secunderabad</u> -- Bachelor's</li><br>August 2022 - Ongoing<br>Currently pursuing a Bachelor of Science specializing in Computer Science and Engineering.<div class="content">Academic Achievement: 9.66 CGPA (Till Date)</div></p>
     </div>
   </div>
 </div>
 
-<div id="achievements" class="container">
-  <!-- Achievements and Involvements -->
+
+<div id="interests" class="container">
+  <!-- Interests -->
   <div class="card">
     <div class="card-content">
-      <h2>Achievements and Involvements</h2>
-      <p><u><li>Class Representative</u></li><br><div class="content">August 2022 - Ongoing<br>Department of B.Sc Computer Science and Engineering<br>Loyola Academy, Secunderabad</p></div>
-      <p><u><li>Volunteer</u> -- MAGIC Youth - Transnational Youth Summit - 2022</li><br><div class="content">December 2022<br>Transnational Youth Summit - 2022 was a mock Model United Nations summit which focused on bringing out awareness regarding the global issues among the youth.</p></div>
-      <p><u><li>Documentation Head</u> -- MAGIC Youth Core Committee</li><br><div class="content">July 2023 - Ongoing<br>The MAGIC Youth Core Committee is a charity based unit at Loyola Academy, Secunderabad which focuses on bringing out change in the modern society.<br>This included organising several awareness events and conducting outreach activities.</p></div>
-      <p><u><li>Organiser - Technical Team</u> -- Let Us Dream - Triennial International Conference - 2023</li><br><div class="content">November 2023<br>With the theme of Empowered Communities, the LET US DREAM conference brings together individuals with transformative stories of social intervention.</p></div>
+      <h2>Work Experience</h2>
+      <ul>
+        <li><u>Data Science and AIML Intern</u> -- YBI Foundation<br>Internship -- July, 2024 - Present</li>
+        <div class="content"><ul><li>Exploring the fields of Data Science and Data Analytics.</li></ul></div><br>
+        <li><u>Python Programming Intern</u> -- YBI Foundation<br>Internship -- June, 2024 - August, 2024
+          <div class="content"><ul>
+            <li>Utilized Pandas library for data analysis, manipulation, and visualization purposes.</li>
+            <li>Constructed web-based applications using the Django framework.</li>
+            <li>Built A Movie Recommendation System powered by Machine Learning Algorithms.</li>
+          </ul></div>
+        </li><br>
+        <li><u>Artificial Intelligence and Machine Learning Intern</u> -- YBI Foundation<br>Internship -- June, 2024 - July, 2024
+          <div class="content"><ul>
+            <li>Developed Al models to automate data processing tasks.</li>
+            <li>Built prototypes of automated decision-making systems using reinforcement learning.</li>
+          </ul></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="projects" class="container">
+  <!-- Education -->
+  <div class="card">
+    <div class="card-content">
+      <h2>Projects</h2>
+      <p><li><u>SmartFlick Finder</u> -- Minor Project</li><div class="content">April, 2024 - Present<br> A Recommendation System powered by Machine Learning Algorithms (Cosine Similarity)</div></p>
+      <p><li><u>Smart Security System</u> -- Mini Project</li><div class="content">March, 2024 - April, 2024<br>A Security Camera System optimised to capture based on the situation powered by OpenCV and Image Processing</div></p>
     </div>
   </div>
 </div>
@@ -358,6 +400,7 @@
   <div class="card">
     <div class="card-content">
       <h2>Workshops & Certifications</h2>
+      <p><li><u>AI and Data Skills</u></li><br><div class="content">June, 2024 - YBI Foundation<br>Completed a 2 weeks course on Artificial Intelligence and Data Skills which was an Internship cum Certification Program.</p></div>
       <p><li><u>Cyber Security / Fundamentals of Cyber Security</u></li><br><div class="content">10th - 12th July, 2023 - Loyola Academy, Secunderabad<br>Participated in a 3 days Practical Hands-on Workshop on CYBER SECURITY (Level - 1) conducted by the dept of B.Sc Computer Science and Engineering in association with Supraja Technologies.</p></div>
       <p><li><u>IT Fundamentals / Comptia IT Fundamentals (FC0-U61)</u></li><br><div class="content">December 10th, 2023 - Comptia, Udemy<br>Completed a Comptia IT Fundamentals (FC0-U61) ITF+ Course on Udemy instructed by Mike Chapple, Ph.D.</p></div>
       <p><li><u>Psychology / Introduction to Psychology (NPTEL)</u></li><br><div class="content">January - March, 2023 - IIT Kanpur, NPTEL, Swayam<br>Completed an Introduction to Psychology course offered by the Institute of Technology, Kanpur on NPTEL, Swayam.</p></div>
@@ -401,41 +444,23 @@
             <li>JavaScript - JS</li>
           </ul></div> 
         </li>
-        <li>C</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Prompt Engineering</li>
+        <li>Machine Learning</li>
+        <li>Python</li>
+        <li>Advanced Java</li>
+        <li>OpenCV</li>
       </ul>
     </div>
   </div>
 </div>
 
-<div id="interests" class="container">
-  <!-- Interests -->
+<div id="achievements" class="container">
+  <!-- Achievements and Involvements -->
   <div class="card">
     <div class="card-content">
-      <h2>Interests</h2>
-      <ul>
-        <li>Automobiles</li>
-        <li>Athletics</li>
-        <li>Hypothetical Theories</li>
-        <li>Scriptures</li>
-        <li>Skill Development</li>
-        <li>Strategic Games<br>
-          <div class="content"><ul>
-            <li>Valorant - Loyola eSports Team</li>
-            <li>BattleGrounds Mobile India</li>
-            <li>Counter Strike : Global Offensive</li>
-          </ul></div>
-        </li>
-        <li>Technology<br>
-          <div class="content"><ul>
-            <li>Artificial Intelligence</li>
-            <li>Information Technology</li>
-            <li>Machine Learning</li>
-          </ul></div>
-        </li>
-      </ul>
+      <h2>Volunteering</h2>
+      <p><u><li>Point of Contact - Vision Hive Hub</u> -- Let Us Dream</li><br><div class="content">July 2024 - Ongoing<br>The Let Us Dream Community Hubs are a platform for students to turn into intellects by indulging themselves into various Hubs and discover their true potential.</p></div>
+      <p><u><li>Organiser - Technical Team</u> -- Let Us Dream - Triennial International Conference - 2023</li><br><div class="content">November 2023<br>With the theme of Empowered Communities, the LET US DREAM conference brings together individuals with transformative stories of social intervention.</p></div>
+      <p><u><li>Volunteer</u> -- MAGIC Youth - Transnational Youth Summit - 2022</li><br><div class="content">December 2022<br>Transnational Youth Summit - 2022 was a mock Model United Nations summit which focused on bringing out awareness regarding the global issues among the youth.</p></div>
     </div>
   </div>
 </div>
@@ -474,7 +499,7 @@
     <a href="https://www.facebook.com/arjun33388"><img src="https://arjun33388.github.io/My-Resume/logo-facebookpng-32204.png" alt="Facebook"></a>
   </div>
   <div class="contact-info">
-    <p>Contact Info: <a href="mailto:arjun33388@gmail.com">arjun33388@gmail.com</a> | Phone: +91 70757 34XXX</p>
+    <p>Contact Info: <a href="mailto:arjun33388@gmail.com">arjun33388@gmail.com</a> | Phone: +91 70757 34XXX</a></p>
   </div>
   <div class="social-icons">
     <a href="https://www.linkedin.com/in/-arjun--r/"><img src="https://arjun33388.github.io/My-Resume/linkedin-logo-png-1837.png" alt="LinkedIn"></a>
@@ -543,6 +568,15 @@
     } else {
       footer.classList.remove('open');
     }
+  });
+  //form reset
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('Userform');
+    
+    form.addEventListener('submit', function () {
+      // Clear form fields after submission
+      form.reset();
+    });
   });
 </script>
 </body>
